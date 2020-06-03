@@ -1,1 +1,1 @@
-# Android-mobile-application-in-link-with-Live-Objects-for-field-technicians
+The "Live Objects sensor" mobile app will be available soon.
