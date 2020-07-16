@@ -1,4 +1,4 @@
-# IoT For technicians
+# IoT For Technicians
 
 Live Objects is a Saas solution to collect data from sensors, supporting several types of connectivity (LoRa, SMS,MQTT).
 Customers can manage a sensor fleet, use data from Live Objects, process data through other business applications.
