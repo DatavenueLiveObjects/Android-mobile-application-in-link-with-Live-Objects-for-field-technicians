@@ -120,13 +120,13 @@ Version 1.2.0
 
 Copyright (C) 2016 Orange
 
-This software is distributed under the terms and conditions of the 'Apache-2.0' license which can be found in the file 'license.txt' in this package distribution or at
+This software is distributed under the terms and conditions of the 'Apache-2.0' license which can be found in the file 'LICENSE.txt' in this package distribution or at
 
 http://www.apache.org/licenses/LICENSE-2.0
 
 ### Third-Party Code
 
-This software includes the following third-party code which can be found in the file 'thirdparties.txt' in this package distribution:
+This software includes the following third-party code which can be found in the file 'THIRD-PARTY.txt' in this package distribution:
 
 * Android AppCompat Library V7 1.1.0 Apache License 2.0
 * Play Services Maps 17.0.0 Android Software Development Kit License

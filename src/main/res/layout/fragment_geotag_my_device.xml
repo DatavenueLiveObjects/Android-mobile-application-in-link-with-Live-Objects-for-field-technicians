@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/geotagMyDeviceLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="0dp"
+        android:paddingEnd="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/device_status_name"
+                style="@style/DeviceStatusDeviceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="23dp" />
+
+            <TextView
+                android:id="@+id/device_status_id"
+                style="@style/DeviceStatusTextBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/device_status_name"
+                android:layout_marginTop="9dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/position"
+                style="@style/ButtonSmall"
+                android:layout_width="156dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginBottom="32dp"
+                android:text="@string/position" />
+
+            <include
+                layout="@layout/divider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/location_subtitle_outdoor"
+                style="@style/DeviceStatusDeviceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30dp"
+                android:text="@string/location_subtitle_outdoor" />
+
+            <TextView
+                style="@style/DeviceStatusTextBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/location_subtitle_outdoor"
+                android:layout_marginTop="9dp"
+                android:text="@string/static_location" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <TableRow
+            android:background="@drawable/location_row_shape"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <TextView
+                style="@style/EditLocationTableRow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:text="@string/location_lon_subtitle" />
+
+            <TextView
+                android:id="@+id/geotag_outdoor_lon"
+                style="@style/EditLocationTableRowBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_weight="2"
+                android:gravity="end" />
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/location_row_shape"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <TextView
+                style="@style/EditLocationTableRow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:text="@string/location_lat_subtitle" />
+
+            <TextView
+                android:id="@+id/geotag_outdoor_lat"
+                style="@style/EditLocationTableRowBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_weight="2"
+                android:gravity="end" />
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/location_row_shape"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <TextView
+                style="@style/EditLocationTableRow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:text="@string/location_alt_subtitle" />
+
+            <TextView
+                android:id="@+id/geotag_outdoor_alt"
+                style="@style/EditLocationTableRowBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_weight="2"
+                android:gravity="end" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="0dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:id="@+id/geotag_indoor"
+            style="@style/DeviceStatusDeviceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/location_subtitle_indoor" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/geotag_indoor_building_layout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/input_location_shape"
+            android:gravity="center_vertical"
+            android:hint="@string/indoor_location_building"
+            app:hintTextAppearance="@style/TextInputLayoutHintStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/geotag_indoor_building"
+                style="@style/LocationInput"
+                android:layout_width="match_parent"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/geotag_indoor_floor_layout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/input_location_shape"
+            android:gravity="center_vertical"
+            android:hint="@string/indoor_location_floor"
+
+            app:hintTextAppearance="@style/TextInputLayoutHintStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/geotag_indoor_floor"
+                style="@style/LocationInput"
+                android:layout_width="match_parent"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/geotag_indoor_room_layout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/input_location_shape"
+            android:gravity="center_vertical"
+            android:hint="@string/indoor_location_room"
+            app:hintTextAppearance="@style/TextInputLayoutHintStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/geotag_indoor_room"
+                style="@style/LocationInput"
+                android:layout_width="match_parent"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:background="@color/white"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/save_props_btn"
+            style="@style/Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_btn" />
+    </LinearLayout>
+
+
+</LinearLayout>

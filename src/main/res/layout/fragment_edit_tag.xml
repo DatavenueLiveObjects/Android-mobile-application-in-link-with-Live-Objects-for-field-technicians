@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/edit_tag_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/input_delete"
+        android:contentDescription="@string/delete" />
+
+    <TextView
+        android:id="@+id/edit_tag_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:text="@string/edit_tags"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/helveticaneue_bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginTop="16dp" >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edit_tag"
+            android:layout_width="250dp"
+            android:layout_height="52dp"
+            android:background="@drawable/input_login_shape"
+            app:hintTextAppearance="@style/TextInputLayoutHintStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_tag_text"
+                style="@style/LoginAndPasswordInput"
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:hint="@string/tag_name"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/add_new_tag"
+            style="@style/ButtonSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/add_new"/>
+
+    </LinearLayout>
+
+    <com.cunoraz.tagview.TagView
+        xmlns:tagview="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tag_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_vertical"
+        tagview:lineMargin="5dp"
+        tagview:tagMargin="16dp"
+        tagview:textPaddingLeft="10dp"
+        tagview:textPaddingTop="8dp"
+        tagview:textPaddingRight="8dp"
+        tagview:textPaddingBottom="8dp" />
+
+    <Button
+        android:id="@+id/save_edit_tag"
+        style="@style/Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/save_btn" />
+
+</LinearLayout>

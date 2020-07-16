@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loginFragmentLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp">
+
+    <LinearLayout
+        android:id="@+id/loginTopLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/appForTechniciansTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/app_name"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loginBottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="62dp"
+        android:paddingBottom="24dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextLoginLayout"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:background="@drawable/input_login_shape"
+            app:hintTextAppearance="@style/TextInputLayoutHintStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextLogin"
+                style="@style/LoginAndPasswordInput"
+                android:layout_width="match_parent"
+                android:hint="@string/username_or_email"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/input_login_shape"
+            app:hintTextAppearance="@style/TextInputLayoutHintStyle"
+            app:layout_constraintTop_toBottomOf="@+id/editTextLoginLayout"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextPassword"
+                style="@style/LoginAndPasswordInput"
+                android:layout_width="match_parent"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonLogin"
+            style="@style/LoginButton"
+            android:layout_width="match_parent"
+            android:layout_marginTop="70dp"
+            android:text="@string/log_in"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPasswordLayout" />
+
+    </LinearLayout>
+</LinearLayout>

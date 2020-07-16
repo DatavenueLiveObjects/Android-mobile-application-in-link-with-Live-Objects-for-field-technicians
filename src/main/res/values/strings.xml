@@ -1,0 +1,209 @@
+<resources>
+    <string name="app_name">IoT for technicians</string>
+
+    <!--    Login    -->
+    <string name="user_authentication_failed">User authentication failed</string>
+    <string name="username_or_email">Login</string>
+    <string name="password">Password</string>
+    <string name="log_in">Connect</string>
+
+    <!--    Menu    -->
+    <string name="please_click_back_again">Please click BACK again to logout and exit</string>
+    <string name="search_for_device">Search for device</string>
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="no_possible_to_scan_code">No possible to scan the QRcode</string>
+    <string name="theoretical_coverage">Theoretical coverage</string>
+
+    <!--    Nearest devices    -->
+    <string name="title_activity_nearest_devices">Find nearest devices</string>
+    <string name="no_data_found">No data found.</string>
+    <string name="unable_to_get_data">Unable to get data.</string>
+
+    <!--    Find my device    -->
+    <string name="title_activity_find_my_device">Find my device</string>
+    <string name="o_found_device">0 device found</string>
+    <string name="device_name">Device Name</string>
+    <string name="button_filter">Filters</string>
+    <string name="button_sort">Sort</string>
+    <string name="button_clear">Clear</string>
+    <string name="button_show_results">Show results (%1$d)</string>
+    <string name="items_count">%1$d items</string>
+    <string name="sorted_by">Sorted by %1$s</string>
+
+    <string name="search_type_device_id">Device ID</string>
+    <string name="search_type_device_name">Device Name</string>
+    <string name="search_type_device_group">Group Name</string>
+    <string name="search_type_interface_status">Interface Status</string>
+
+    <string name="sort_by_device_id">Device ID</string>
+    <string name="sort_by_device_name">Device Name</string>
+    <string name="sort_by_device_last_contact">Last Comm.</string>
+
+    <string name="root_group_name">All devices</string>
+    <string name="signal_lvl_subtitle_colon">Network signal:</string>
+
+    <string name="france">France</string>
+    <string name="spain">Spain</string>
+    <string name="poland">Poland</string>
+    <string name="romania">Romania</string>
+    <string name="slovakia">Slovakia</string>
+
+    <string name="lte_m">LTE-M</string>
+    <string name="lora">LoRa</string>
+    <string name="g3_g4">3G-4G</string>
+    <string name="all">All</string>
+
+    <!--    Device data    -->
+    <string name="title_activity_device_data">Device Info</string>
+    <string name="device_id">Device ID</string>
+    <string name="name">Name</string>
+    <string name="default_stream_id">Default StreamId</string>
+    <string name="tags">Tags</string>
+    <string name="group">Group</string>
+    <string name="properties">Properties</string>
+    <string name="last_update_date">Last update date</string>
+    <string name="registration_date">Registration date</string>
+
+    <!--    Permissions    -->
+    <string name="permission_rationale_location">Access to the location service is required to access all feature of this app.</string>
+    <string name="location_permission_denied">This app requires location permission. Please try again and grant access to use the location.\nIf the permission has been permanently denied, it can be enabled from the System Settings.</string>
+    <string name="permission_required_toast">Location permission is required for this app.</string>
+
+    <!-- Common -->
+    <string name="loading">Loading…</string>
+    <string name="ok">OK</string>
+    <string name="problem_occurs">A problem occurs. Please try again.</string>
+    <string name="no_connection_available">No connection available. Please check the network</string>
+    <string name="session_restoring">Session restoring…</string>
+    <string name="session_expired">Your session has expired.</string>
+    <string name="no_data_available">No data available</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- device status -->
+    <string name="title_activity_device_status">Device Status</string>
+    <string name="outdoor_location_subtitle">Outdoor</string>
+    <string name="static_location_subtitle">Static location</string>
+    <string name="dynamic_location_subtitle">Dynamic location</string>
+    <string name="indoor_location_subtitle">Indoor</string>
+    <string name="signal_lvl_subtitle">Network signal</string>
+    <string name="not_available">Not defined</string>
+    <string name="payload_message_text">Last payload messages</string>
+    <string name="last_communication_date">Last Comm:</string>
+    <string name="no_static_location_set">Not set</string>
+    <string name="no_dynamic_location_available">No location received from the device</string>
+    <string name="activity_logs">Activity logs</string>
+
+    <!-- Network coverage -->
+    <string name="title_activity_network_coverage">Network coverage</string>
+    <string name="last_date">Last date</string>
+    <string name="network_signal">Network signal</string>
+    <string name="rssi">Rssi</string>
+    <string name="snr">Snr</string>
+    <string name="esp">Esp</string>
+    <string name="sf">Sf</string>
+    <string name="gateway_count">Gateway count</string>
+
+    <!-- Device payload -->
+    <string name="title_activity_device_payload">Payload Messages</string>
+    <string name="message_date">last comm: %1$s</string>
+    <string name="header_title">Message</string>
+    <string name="copy_message">copy all message</string>
+    <string name="message_copied">Message copied</string>
+
+    <!-- Show on map -->
+    <string name="title_activity_show_on_map">Show on map</string>
+    <string name="show_on_map">Show on map</string>
+    <string name="last_communication_date_template">Last Comm: %s</string>
+
+    <!-- Network coverage map -->
+    <string name="network_coverage_title">Select the country to show theoretical network coverage map</string>
+    <string name="network_coverage_subtitle">Select country:</string>
+    <string name="network_coverage_type_title">Choose connectivity type:</string>
+    <string name="network_coverage_show_map">Show Map</string>
+
+    <!-- Edit location -->
+    <string name="title_edit_location">Edit Location</string>
+    <string name="location_subtitle_indoor">Indoor</string>
+    <string name="location_subtitle_outdoor">Outdoor</string>
+    <string name="static_location">Static Location</string>
+    <string name="position">Refresh Position</string>
+
+    <string name="building_floor_room_template">Building %1$s \nFloor %2$s | Room %3$s</string>
+    <string name="building_floor_room_no_enter_template">Building %1$s | Floor %2$s | Room %3$s</string>
+    <string name="no_value">No value</string>
+    <string name="edit"><u>Edit</u></string>
+    <string name="location_lat_subtitle">Lat</string>
+    <string name="location_lon_subtitle">Lon</string>
+    <string name="location_alt_subtitle">Alt</string>
+    <string name="indoor_location_room">Room</string>
+    <string name="indoor_location_floor">Floor</string>
+    <string name="indoor_location_building">Building</string>
+    <string name="save_btn">Save</string>
+    <string name="updated_static_prop_info">Updated static location</string>
+    <string name="updated_prop_info">Updated property successfully</string>
+    <string name="content_description_loop">loop</string>
+    <string name="refresh_button_content_desc">Refresh button</string>
+    <string name="device_info">Device info</string>
+    <string name="arrow_content_desc">arrow</string>
+    <string name="status">Interface: </string>
+    <string name="device_status_image">device_status_image</string>
+    <string name="representation_of_signal_level">Representation of signal level</string>
+
+    <string name="static_location_template">Static location: %s</string>
+    <string name="static_location_short_template">Static: %s</string>
+    <string name="dynamic_location_template">Dynamic location: %s</string>
+    <string name="dynamic_location_short_template">Dynamic: %s</string>
+
+    <!-- Activity logs -->
+    <string name="logs_message">Message</string>
+    <string name="logs_connectivity">Connectivity</string>
+    <string name="logs_timestamp">Timestamp</string>
+    <string name="logs_created">Created</string>
+    <string name="logs_type">Type</string>
+    <string name="MessageType">Message Type</string>
+    <string name="AdrAckRequest">Adr Ack Request</string>
+    <string name="SignalLevel">Signal Level</string>
+    <string name="GatewayCnt">Gateway Cnt</string>
+    <string name="UNCONFIRMED_DATA_UP">UNCONFIRMED DATA UP</string>
+    <string name="lora_network">LoRa network</string>
+
+    <string name="no_network_data_available">No network data available.</string>
+    <string name="value">Value</string>
+    <string name="edit_properties">Edit Properties</string>
+    <string name="add_new">add New</string>
+    <string name="empty_name">The name of property %s cannot be empty</string>
+    <string name="connectivity">Interface:</string>
+    <string name="interface_status_info">Status:</string>
+    <string name="delete">delete</string>
+    <string name="updated_name_info">Updated device name</string>
+    <string name="home">Home</string>
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+    <string name="version">version</string>
+    <string name="version_template">version %s</string>
+    <string name="legal_mentions">Legal Mentions</string>
+    <string name="gps_network_not_enabled">To use the application, we recommend that you enable the location of your mobile</string>
+    <string name="open_location_settings">Activate</string>
+    <string name="cancel">No, thanks</string>
+
+    <string name="data_usage">Data usage</string>
+    <string name="data_description">Help us to improve the application by sending us information about how to you use the application. No personal data will be collected.</string>
+
+    <string name="more_apps">More Apps</string>
+    <string name="device_status_gsp_info">You can modify static location using your mobile\'s GPS</string>
+    <string name="select_a_filter">Select filter</string>
+    <string name="edit_device_name">Edit Device Name</string>
+    <string name="use_and_terms">General Conditions of Use</string>
+    <string name="terms_and_conditions">Terms and conditions</string>
+    <string name="agree_terms_question">Do you accept the General Conditions of Use and the data protection notice?</string>
+    <string name="agree_terms_content">TO BE COMPLETED</string>
+    <string name="agree_terms_answer">I read the General Conditions of Use.</string>
+    <string name="accept">Accept</string>
+    <string name="refuse">Refuse</string>
+
+    <string name="edit_tags">Edit Tags</string>
+    <string name="tag_name">Tag Name</string>
+
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/filter_top_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="16dp"
+    android:paddingTop="23dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="23dp">
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/filter_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue_bold"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/filter_checkbox"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentEnd="true"
+            android:button="@drawable/checkbox_selector" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/filter_value_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="17dp"
+        android:visibility="gone">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/input_login_shape"
+            app:endIconContentDescription="@string/button_clear"
+            app:endIconDrawable="@drawable/input_delete"
+            app:endIconMode="custom"
+            app:hintTextAppearance="@style/TextInputLayoutHintStyle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/filter_value_input"
+                style="@style/PropertiesInput"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/edit_name_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/input_delete"
+        android:contentDescription="@string/delete" />
+
+    <TextView
+        android:id="@+id/edit_name_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:text="@string/edit_device_name"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/helveticaneue_bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_name_name"
+        android:layout_width="368dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="78dp"
+        android:layout_below="@id/edit_name_title"
+        android:background="@drawable/input_login_shape"
+        app:hintTextAppearance="@style/TextInputLayoutHintStyle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_name_text"
+            style="@style/LoginAndPasswordInput"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/name"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_name_name"
+        android:layout_marginTop="17dp"
+        android:background="@color/white"
+        android:paddingTop="16dp">
+
+        <Button
+            android:id="@+id/save_edit_name"
+            style="@style/Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_btn" />
+    </LinearLayout>
+
+</RelativeLayout>

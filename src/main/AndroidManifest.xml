@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.company.iotfortechnicians">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="com.company.iotfortechnicians.activity.PERMISSION" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name="com.company.iotfortechnicians.IOTApplication">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name="com.company.iotfortechnicians.menu.MenuActivity"
+            android:screenOrientation="sensorPortrait"
+            android:label="@string/app_name"
+            android:permission="com.company.iotfortechnicians.activity.PERMISSION"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.company.iotfortechnicians.splashscreen.SplashScreenActivity"
+            android:screenOrientation="sensorPortrait"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar.Splash"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.company.iotfortechnicians.login.LoginActivity"
+            android:screenOrientation="sensorPortrait"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar.Login"
+            android:permission="com.company.iotfortechnicians.activity.PERMISSION"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.company.iotfortechnicians.deviceinfo.DeviceInfoActivity"
+            android:screenOrientation="sensorPortrait"
+            android:label="@string/title_activity_device_data"
+            android:parentActivityName="com.company.iotfortechnicians.menu.MenuActivity"
+            android:permission="com.company.iotfortechnicians.activity.PERMISSION"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.company.iotfortechnicians.menu.MenuActivity" />
+        </activity>
+        <activity
+            android:name="com.company.iotfortechnicians.findmydevice.FindMyDeviceActivity"
+            android:screenOrientation="sensorPortrait"
+            android:label="@string/title_activity_find_my_device"
+            android:parentActivityName="com.company.iotfortechnicians.menu.MenuActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:permission="com.company.iotfortechnicians.activity.PERMISSION"
+            android:windowSoftInputMode="stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.company.iotfortechnicians.menu.MenuActivity" />
+        </activity>
+        <activity
+            android:name="com.company.iotfortechnicians.devicestatus.DeviceStatusActivity"
+            android:screenOrientation="sensorPortrait"
+            android:label="@string/title_activity_device_status"
+            android:parentActivityName="com.company.iotfortechnicians.menu.MenuActivity"
+            android:permission="com.company.iotfortechnicians.activity.PERMISSION"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.company.iotfortechnicians.networkcoverage.NetworkCoverageActivity"
+            android:screenOrientation="sensorPortrait"
+            android:label="@string/title_activity_network_coverage"
+            android:parentActivityName="com.company.iotfortechnicians.menu.MenuActivity"
+            android:permission="com.company.iotfortechnicians.activity.PERMISSION"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.company.iotfortechnicians.devicepayload.DevicePayloadActivity"
+            android:screenOrientation="sensorPortrait"
+            android:label="@string/title_activity_device_payload"
+            android:parentActivityName="com.company.iotfortechnicians.menu.MenuActivity"
+            android:permission="com.company.iotfortechnicians.activity.PERMISSION"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.company.iotfortechnicians.geotagmydevice.GeotagActivity"
+            android:label="@string/title_edit_location"
+            android:parentActivityName="com.company.iotfortechnicians.devicestatus.DeviceStatusActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:permission="com.company.iotfortechnicians.activity.PERMISSION"
+            android:windowSoftInputMode="stateHidden"  />
+        <activity
+            android:name="com.company.iotfortechnicians.showonmap.ShowOnMapActivity"
+            android:screenOrientation="sensorPortrait"
+            android:label="@string/title_activity_show_on_map"
+            android:parentActivityName="com.company.iotfortechnicians.devicestatus.DeviceStatusActivity"
+            android:permission="com.company.iotfortechnicians.activity.PERMISSION"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.company.iotfortechnicians.editname.EditNameActivity"
+            android:screenOrientation="sensorPortrait"
+            android:parentActivityName="com.company.iotfortechnicians.deviceinfo.DeviceInfoActivity"
+            android:permission="com.company.iotfortechnicians.activity.PERMISSION"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.company.iotfortechnicians.editproperties.EditPropertiesActivity"
+            android:screenOrientation="sensorPortrait"
+            android:parentActivityName="com.company.iotfortechnicians.deviceinfo.DeviceInfoActivity"
+            android:permission="com.company.iotfortechnicians.activity.PERMISSION"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.company.iotfortechnicians.agreeterms.AgreeTermsActivity"
+            android:screenOrientation="sensorPortrait"
+            android:parentActivityName=".splashscreen.SplashScreenActivity"
+            android:permission="com.company.iotfortechnicians.activity.PERMISSION"
+            android:theme="@style/AppTheme.NoActionBar.AgreeTerms"/>
+        <activity
+            android:name="com.company.iotfortechnicians.edittag.EditTagActivity"
+            android:screenOrientation="sensorPortrait"
+            android:parentActivityName="com.company.iotfortechnicians.deviceinfo.DeviceInfoActivity"
+            android:permission="com.company.iotfortechnicians.activity.PERMISSION"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.company.iotfortechnicians.scanqrcode.ScanQRCodeActivity"
+            android:screenOrientation="sensorPortrait"
+            android:parentActivityName="com.company.iotfortechnicians.menu.MenuActivity"
+            android:permission="com.company.iotfortechnicians.activity.PERMISSION"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".findmydevice.filter.FilterActivity"
+            android:screenOrientation="sensorPortrait"
+            android:parentActivityName="com.company.iotfortechnicians.findmydevice.FindMyDeviceActivity"
+            android:permission="com.company.iotfortechnicians.activity.PERMISSION"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activitylog.list.ActivityLogListActivity"
+            android:parentActivityName=".menu.MenuActivity"
+            android:permission="com.company.iotfortechnicians.activity.PERMISSION"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activitylog.details.ActivityLogDetailsActivity"
+            android:parentActivityName=".activitylog.list.ActivityLogListActivity"
+            android:permission="com.company.iotfortechnicians.activity.PERMISSION"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+    </application>
+
+</manifest>

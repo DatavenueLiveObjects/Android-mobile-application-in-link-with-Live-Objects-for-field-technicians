@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorLoginBackground">#FFF</color>
+    <color name="colorSplashScreenBackground">#000</color>
+    <color name="colorLoginInputText">#666666</color>
+    <color name="colorLoginInputBorder">#999999</color>
+    <color name="colorLoginButtonText">#FFF</color>
+    <color name="homeScreenBackground">#f5f5f5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="subtextColor">#666666</color>
+    <color name="divider">#1e000000</color>
+    <color name="appEdit">#000</color>
+    <color name="locationBorder">#d8d8d8</color>
+    <color name="lastDateNoColor">@color/white</color>
+    <color name="lastDateGreen">#32c832</color>
+    <color name="lastDateYellow">#ffcc00</color>
+    <color name="lastDateRed">#FF0000</color>
+    <color name="lastDateGrey">#808080</color>
+    <color name="radioButtonOff">#757575</color>
+    <color name="radioButtonOn">#000</color>
+    <color name="underline">#e0e0e0</color>
+    <color name="active_button_color">@color/colorPrimary</color>
+    <color name="inactive_button_color">#cccccc</color>
+</resources>

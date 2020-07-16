@@ -1,0 +1,16 @@
+Android AppCompat Library V7 1.1.0 Apache License 2.0
+Play Services Maps 17.0.0 Android Software Development Kit License
+Play Services TagManager 17.0.0 Android Software Development Kit License
+ZXing Android Embedded 3.6.0 Apache License 2.0
+ZXing 3.3.3 Apache License 2.0
+Retrofit 2.8.1 Apache License 2.0
+Logging Interceptor 4.4.1 Apache License 2.0
+Material Components For Android 1.3.0-alpha01 Apache License 2.0
+Android ConstraintLayout 1.1.3 Apache License 2.0
+Legacy Support 1.1.3 Apache License 2.0
+Android Support RecyclerView V7 1.1.0 Apache License 2.0
+Android Lifecycle Extensions 2.2.0 Apache License 2.0
+Android TagView-HashTagView 1.3 Apache License 2.0
+Project Lombok 1.18.12 MIT License
+AndroidX Preference 1.1.1 Apache License 2.0
+AndroidX Security 1.1.0-alpha01 Apache License 2.0

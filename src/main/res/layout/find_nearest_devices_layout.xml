@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#FF8900">
+
+        <Button
+            android:id="@+id/buttonSearch"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="30dp"
+            android:text="Find"
+            tools:height="10sp"
+            android:background="@drawable/button_shape"/>
+
+        <!--<Button-->
+            <!--android:id="@+id/buttonLocation"-->
+            <!--style="@style/Widget.AppCompat.Button"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_marginBottom="40dp"-->
+            <!--android:layout_marginRight="30dp"-->
+            <!--android:text="LOC"-->
+            <!--tools:height="10sp"-->
+            <!--android:background="@drawable/button_shape"/>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/buttonLongitude"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:text="LONG"-->
+            <!--tools:width="20sp"-->
+            <!--android:layout_marginBottom="40dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:background="#00000000"-->
+            <!--/>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/buttonLatitude"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_toRightOf="@+id/buttonLongitude"-->
+            <!--android:layout_marginBottom="40dp"-->
+            <!--android:text="LAT"-->
+            <!--tools:width="20sp"-->
+            <!--android:background="#00000000"-->
+            <!--/>-->
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.company.iotfortechnicians.findnearestdevices.FindNearestDevicesActivity"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+        />
+
+
+
+
+</RelativeLayout>

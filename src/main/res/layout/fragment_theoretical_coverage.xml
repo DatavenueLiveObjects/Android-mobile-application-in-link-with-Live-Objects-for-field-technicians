@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="15dp"
+    android:paddingRight="15dp"
+    android:layout_marginLeft="10dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        style="@style/TheoreticalCoverageMapPrimaryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/network_coverage_title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/network_coverage_subtitle" />
+
+    <Spinner
+        android:id="@+id/theoretical_coverage"
+        android:layout_marginTop="15dp"
+        style="@style/Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/connectivity_type_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/network_coverage_type_title" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/connectivity_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:gravity="bottom">
+        <Button
+            style="@style/Button"
+            android:id="@+id/show_map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/network_coverage_show_map" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
