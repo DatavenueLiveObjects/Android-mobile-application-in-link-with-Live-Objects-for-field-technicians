@@ -86,8 +86,13 @@ public class ScanQRCodeFragment extends AbstractIOTApiCallbackFragment<List<Devi
     }
 
     private String extractDeviceId(String text) {
-        String[] codeParts = text.split(";");
-        return codeParts[codeParts.length - 1];
+         if(text.contains(":") && text.startsWith("LW")){
+            String[] codeParts = text.split(":");
+            return codeParts[3].toLowerCase();
+        }else{
+            String[] codeParts = text.split(";");
+            return codeParts[codeParts.length - 1];
+        }
     }
 
     @Override
